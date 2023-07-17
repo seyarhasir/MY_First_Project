@@ -74,3 +74,19 @@ print(is_power_of_two(0))  # Should be False
 print(is_power_of_two(1))  # Should be True
 print(is_power_of_two(8))  # Should be True
 print(is_power_of_two(9))  # Should be False
+
+
+#MY First Game 
+import random
+def Quodos_game():
+  secret_num = random.randint(0,2)
+  my_guess = int(input("Guess the number: "))
+  
+  if my_guess == secret_num:
+    print("Weldone bro, You got it!")
+  else:
+    print("Opps! You loss")
+
+for i in range(3):
+  Quodos_game()
+
