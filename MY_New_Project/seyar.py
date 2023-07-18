@@ -90,3 +90,26 @@ def Quodos_game():
 for i in range(3):
   Quodos_game()
 
+#FIRST EULAR Problem 1
+#ONE WAY
+"""
+count = 0
+for i in range(1,1000):
+  if not i % 3 or not i % 5:
+    count += i    
+print(count)
+"""
+
+#SECOND WAY
+"""
+print(sum(set([*range(3,1000,3)]+[*range(5,1000,5)])))
+"""
+
+#THIRD WAY
+"""
+s = 0
+for i in range(1,1000):
+    if i % 3 == 0 or i % 5 == 0:
+      s += i
+print(s)
+"""
